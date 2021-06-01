@@ -5,6 +5,8 @@ def count_words(filename):
             contents = f_obj.read()
     except FileNotFoundError:
         print("Sorry, the file " + filename + " does not exist.")
+        #失败时一声不吭
+        #pass
     else:
         words = contents.split()
         num_words = len(words)
